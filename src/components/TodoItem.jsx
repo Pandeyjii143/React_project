@@ -1,6 +1,9 @@
 import { MdDeleteSweep } from "react-icons/md";
+import { useContext } from "react";
+import { TodoItemContext } from "../store/todo_item_store";
 
-const TodoItem = ({ todoName, todoDate, onDeleteClick }) => {
+const TodoItem = ({ todoName, todoDate }) => {
+  const { deleteItem } = useContext(TodoItemContext);
   return (
     <div className="row mrow">
       <div class="col-6">{todoName}</div>
@@ -9,7 +12,7 @@ const TodoItem = ({ todoName, todoDate, onDeleteClick }) => {
         <button
           type="button"
           className="btn btn-success mbtn"
-          onClick={() => onDeleteClick(todoName)}
+          onClick={() => deleteItem(todoName)}
         >
           <MdDeleteSweep />
         </button>
