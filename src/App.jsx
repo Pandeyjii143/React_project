@@ -8,7 +8,7 @@ import TodoItemContextProvider from "./store/todo_item_store";
 function App() {
   return (
     <TodoItemContextProvider>
-      <center class="todo-content">
+      <center className="todo-content">
         <AppName />
         <AddTodo />
         <WelcomeMsg />

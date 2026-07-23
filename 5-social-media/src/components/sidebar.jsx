@@ -1,4 +1,4 @@
-const Sidebar = () => {
+const Sidebar = ({ selectedTab, setSelectedTab }) => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar"
@@ -7,23 +7,37 @@ const Sidebar = () => {
       {" "}
       <a
         href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       >
         {" "}
-        <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
+        <svg
+          className="bi pe-none me-2"
+          width="40"
+          height="32"
+          aria-hidden="true"
+        >
           <use xlinkHref="#bootstrap"></use>
         </svg>{" "}
-        <span class="fs-4">Sidebar</span>{" "}
+        <span className="fs-4">Sidebar</span>{" "}
       </a>{" "}
       <hr />{" "}
-      <ul class="nav nav-pills flex-column mb-auto">
+      <ul className="nav nav-pills flex-column mb-auto">
         {" "}
-        <li class="nav-item">
+        <li
+          className="nav-item"
+          onClick={() => {
+            setSelectedTab("Home");
+          }}
+        >
           {" "}
-          <a href="#" class="nav-link active" aria-current="page">
+          <a
+            href="#"
+            className={`nav-link text-black ${selectedTab === "Home" && "active"}`}
+            aria-current="page"
+          >
             {" "}
             <svg
-              class="bi pe-none me-2"
+              className="bi pe-none me-2"
               width="16"
               height="16"
               aria-hidden="true"
@@ -33,73 +47,35 @@ const Sidebar = () => {
             Home
           </a>{" "}
         </li>{" "}
-        <li>
+        <li
+          onClick={() => {
+            setSelectedTab("Create Post");
+          }}
+        >
           {" "}
-          <a href="#" class="nav-link link-body-emphasis">
+          <a
+            href="#"
+            className={`nav-link text-black ${selectedTab === "Create Post" && "active"}`}
+          >
             {" "}
             <svg
-              class="bi pe-none me-2"
+              className="bi pe-none me-2"
               width="16"
               height="16"
               aria-hidden="true"
             >
               <use xlinkHref="#speedometer2"></use>
             </svg>
-            Dashboard
-          </a>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <a href="#" class="nav-link link-body-emphasis">
-            {" "}
-            <svg
-              class="bi pe-none me-2"
-              width="16"
-              height="16"
-              aria-hidden="true"
-            >
-              <use xlinkHref="#table"></use>
-            </svg>
-            Orders
-          </a>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <a href="#" class="nav-link link-body-emphasis">
-            {" "}
-            <svg
-              class="bi pe-none me-2"
-              width="16"
-              height="16"
-              aria-hidden="true"
-            >
-              <use xlinkHref="#grid"></use>
-            </svg>
-            Products
-          </a>{" "}
-        </li>{" "}
-        <li>
-          {" "}
-          <a href="#" class="nav-link link-body-emphasis">
-            {" "}
-            <svg
-              class="bi pe-none me-2"
-              width="16"
-              height="16"
-              aria-hidden="true"
-            >
-              <use xlinkHref="#people-circle"></use>
-            </svg>
-            Customers
+            Create Post
           </a>{" "}
         </li>{" "}
       </ul>{" "}
       <hr />{" "}
-      <div class="dropdown">
+      <div className="dropdown">
         {" "}
         <a
           href="#"
-          class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+          className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -109,32 +85,32 @@ const Sidebar = () => {
             alt=""
             width="32"
             height="32"
-            class="rounded-circle me-2"
+            className="rounded-circle me-2"
           />{" "}
           <strong>Ravi</strong>{" "}
         </a>{" "}
-        <ul class="dropdown-menu text-small shadow">
+        <ul className="dropdown-menu text-small shadow">
           {" "}
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               New project...
             </a>
           </li>{" "}
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Settings
             </a>
           </li>{" "}
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Profile
             </a>
           </li>{" "}
           <li>
-            <hr class="dropdown-divider" />
+            <hr className="dropdown-divider" />
           </li>{" "}
           <li>
-            <a class="dropdown-item" href="#">
+            <a className="dropdown-item" href="#">
               Sign out
             </a>
           </li>{" "}

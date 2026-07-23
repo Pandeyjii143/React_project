@@ -17,7 +17,7 @@ function AddTodo() {
   };
 
   return (
-    <form class="row mrow" onSubmit={handleAddButtonChange}>
+    <form className="row mrow" onSubmit={handleAddButtonChange}>
       <div className="col-6">
         <input
           type="text"
@@ -28,8 +28,8 @@ function AddTodo() {
       <div className="col-4">
         <input type="date" ref={deuDateElements} />
       </div>
-      <div class="col-2">
-        <button type="submit" class="btn btn-success mbtn">
+      <div className="col-2">
+        <button type="submit" className="btn btn-success mbtn">
           <BiMessageAdd />
         </button>
       </div>
