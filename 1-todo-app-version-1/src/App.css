@@ -1,0 +1,21 @@
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+input {
+  width: 100%;
+}
+
+.todo-content {
+  text-align: left;
+}
+
+.mbtn {
+  min-width: 80px;
+}
+
+.mrow {
+  margin: 10px 5px;
+}
