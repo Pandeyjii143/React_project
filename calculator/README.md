@@ -30,6 +30,9 @@ A collection of React.js projects built while learning modern frontend developme
 
 ## 🚀 Getting Started
 
+## 📂 Repository Structure
+
+```text
 ReactJs/
 │
 ├── fist_react_app/
@@ -60,6 +63,7 @@ ReactJs/
 │
 └── 37-advancedReact/
     └── README.md
+```
 
 ```bash
 git clone https://github.com/Pandeyjii143/ReactJs.git
