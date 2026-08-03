@@ -1,0 +1,12 @@
+input {
+  width: 100%;
+}
+
+
+.mbtn {
+  min-width: 80px;
+}
+
+.mrow {
+  margin: 10px 5px;
+}
