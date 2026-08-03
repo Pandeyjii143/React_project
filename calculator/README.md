@@ -40,7 +40,7 @@ A collection of React.js projects built while learning modern frontend developme
 | [🎨 Bootstrap Integration](./17_Bootstrap/learning-boostrap) | Using Bootstrap with React |
 | [🧱 React Fragments](./18-fragments/learnig-fragments) | Fragments, lists, conditional rendering, and forms |
 | [⏰ Bharat Clock](./PROJECT/1-bharat-clock) | Digital clock built with React |
-| [🧮 Calculator](./PROJECT/2-calculator) | Basic calculator using React |
+| [🧮 Calculator](./PROJECT/4-calculation-version-2) | Basic calculator using React |
 | [✅ Todo App](./PROJECT/3-todo-app-version-2) | Task management application |
 | [🛒 Shopping Cart](./PROJECT/4-shopping-cart) | Shopping cart UI with React |
 | [🌐 Social Media](./PROJECT/5-social-media) | Social media UI with Context API |
