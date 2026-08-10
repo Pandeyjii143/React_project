@@ -1,16 +1,86 @@
-# React + Vite
+# ⚛️ React.js Learning Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of React.js projects built while learning modern frontend development.
 
-Currently, two official plugins are available:
+## 📚 Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Project | Description |
+|---------|-------------|
+| 🚀 First React App | Introduction to React and JSX |
+| 🧩 React Components | Reusable components and props |
+| 🎨 Bootstrap | Bootstrap integration with React |
+| 🧱 React Fragments | Fragments, conditional rendering, lists |
+| ⏰ Bharat Clock | Live date and time application |
+| 🧮 Calculator | Basic calculator built with React |
+| ✅ Todo App | Task management application |
+| 🛒 Shopping Cart | Cart functionality with React |
+| 🌐 Social Media | Social media UI using Context API |
+| ⚡ Advanced React | Context API, Hooks, useEffect, API fetching |
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- JavaScript (ES6+)
+- Vite
+- HTML5
+- CSS3
+- Bootstrap
+- Context API
+- Fetch API
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Repository Structure
+## 📂 Projects
+
+```text
+ReactJs/
+│
+├── fist_react_app/
+│   └── README.md
+│
+├── react-componenet/
+│   └── README.md
+│
+├── 17_Bootstrap/
+│   └── learning-boostrap/
+│       └── README.md
+│
+├── 18-fragments/
+│   └── learnig-fragments/
+│       └── README.md
+│
+├── PROJECT/
+│   ├── 1-bharat-clock/
+│   │   └── README.md
+│   ├── 2-calculator/
+│   │   └── README.md
+│   ├── 3-todo-app-version-2/
+│   │   └── README.md
+│   ├── 4-shopping-cart/
+│   │   └── README.md
+│   └── 5-social-media/
+│       └── README.md
+│
+└── 37-advancedReact/
+    └── README.md
+```
+
+```bash
+git clone https://github.com/Pandeyjii143/ReactJs.git
+cd ReactJs
+```
+
+Navigate to any project:
+
+```bash
+cd PROJECT/5-social-media
+npm install
+npm run dev
+```
+
+## 👨‍💻 Author
+
+**Ravikishan Pandey**
+
+- GitHub: https://github.com/Pandeyjii143
