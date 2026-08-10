@@ -1,12 +1,14 @@
-const Sidebar = ({ selectedTab, setSelectedTab }) => {
+import { Link } from "react-router-dom";
+
+const Sidebar = () => {
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary sidebar"
       style={{ width: "170px" }}
     >
       {" "}
-      <a
-        href="/"
+      <Link
+        to="/"
         className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
       >
         {" "}
@@ -19,22 +21,13 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
           <use xlinkHref="#bootstrap"></use>
         </svg>{" "}
         <span className="fs-4">Sidebar</span>{" "}
-      </a>{" "}
+      </Link>{" "}
       <hr />{" "}
       <ul className="nav nav-pills flex-column mb-auto">
         {" "}
-        <li
-          className="nav-item"
-          onClick={() => {
-            setSelectedTab("Home");
-          }}
-        >
+        <li className="nav-item">
           {" "}
-          <a
-            href="#"
-            className={`nav-link text-black ${selectedTab === "Home" && "active"}`}
-            aria-current="page"
-          >
+          <Link to="/" className="nav-link text-black" aria-current="page">
             {" "}
             <svg
               className="bi pe-none me-2"
@@ -45,18 +38,11 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
               <use xlinkHref="#home"></use>
             </svg>
             Home
-          </a>{" "}
+          </Link>{" "}
         </li>{" "}
-        <li
-          onClick={() => {
-            setSelectedTab("Create Post");
-          }}
-        >
+        <li>
           {" "}
-          <a
-            href="#"
-            className={`nav-link text-black ${selectedTab === "Create Post" && "active"}`}
-          >
+          <Link to="/create-post" className="nav-link text-black">
             {" "}
             <svg
               className="bi pe-none me-2"
@@ -67,14 +53,14 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
               <use xlinkHref="#speedometer2"></use>
             </svg>
             Create Post
-          </a>{" "}
+          </Link>{" "}
         </li>{" "}
       </ul>{" "}
       <hr />{" "}
       <div className="dropdown">
         {" "}
-        <a
-          href="#"
+        <Link
+          to="create-post"
           className="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -88,7 +74,7 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
             className="rounded-circle me-2"
           />{" "}
           <strong>Ravi</strong>{" "}
-        </a>{" "}
+        </Link>{" "}
         <ul className="dropdown-menu text-small shadow">
           {" "}
           <li>
