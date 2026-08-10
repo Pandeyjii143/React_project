@@ -1,0 +1,38 @@
+.div-container {
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 500px;
+}
+
+.post-card {
+  margin: 20px 50px;
+  min-width: 30rem;
+}
+
+.hashtag {
+  margin: 0px 5px;
+}
+.reaction {
+  width: 100%;
+  margin: 0px 0px 0px;
+}
+
+.createPost {
+  width: 80%;
+  margin-top: 50%;
+  margin-left: 10%;
+}
+
+.welcome-message {
+  margin-top: 100px;
+}
+
+.spinner {
+  margin: 10px 0px;
+}
