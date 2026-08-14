@@ -1,15 +1,8 @@
-import {
-  createContext,
-  useCallback,
-  useReducer,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, useCallback, useReducer } from "react";
 
 const DEFAULT_CONTEXT = {
   postList: [],
   addPost: () => {},
-  isLoading: false,
   deletePost: () => {},
 };
 
@@ -59,25 +52,9 @@ const PostListProvider = ({ children }) => {
     },
     [dispatchPostList],
   );
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(true);
-    const controller = new AbortController();
-    const signal = controller.signal;
-    fetch("https://dummyjson.com/posts", { signal })
-      .then((res) => res.json())
-      .then((data) => {
-        addInitialPosts(data.posts);
-        setIsLoading(false);
-      });
-    return () => {
-      controller.abort();
-    };
-  }, []);
 
   return (
-    <PostList.Provider value={{ postList, isLoading, addPost, deletePost }}>
+    <PostList.Provider value={{ postList, addPost, deletePost }}>
       {children}
     </PostList.Provider>
   );
