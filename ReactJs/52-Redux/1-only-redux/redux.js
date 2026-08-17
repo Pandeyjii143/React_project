@@ -5,12 +5,15 @@ const INTIAL_VALUE = {
 };
 
 const reducer = (state = INTIAL_VALUE, action) => {
+  let newstate = state;
   if (action.type === "INCREAMENT") {
-    return {
-      counter: state.counter + 1,
-    };
+    newstate = { counter: state.counter + 1 };
+  } else if (action.type === "DECREAMENT") {
+    newstate = { counter: state.counter - 1 };
+  } else if (action.type === "ADDITION") {
+    newstate = { counter: state.counter + action.payload.number };
   }
-  return state;
+  return newstate;
 };
 
 const store = redux.createStore(reducer);
@@ -23,3 +26,7 @@ const subscriber = () => {
 store.subscribe(subscriber);
 
 store.dispatch({ type: "INCREAMENT" });
+store.dispatch({ type: "DECREAMENT" });
+store.dispatch({ type: "INCREAMENT" });
+store.dispatch({ type: "ADDITION", payload: { number: 7 } });
+store.dispatch({ type: "DECREAMENT" });
